@@ -49,6 +49,7 @@ namespace kurs_08122021_86_MessageBoxUygulama
                     BildirimCubugu.Visible = true;
                     BildirimCubugu.Icon = SystemIcons.Information;
                     BildirimCubugu.ShowBalloonTip(2000);
+                    EkranTemizle();
                 }
                 else if (res==DialogResult.No)
                 {
@@ -68,6 +69,7 @@ namespace kurs_08122021_86_MessageBoxUygulama
             foreach (var item in SanalDataBase.musteriler)
             {
                 LstMusteriler.Items.Add(item);
+
             }
            
            
@@ -86,12 +88,6 @@ namespace kurs_08122021_86_MessageBoxUygulama
             SanalDataBase.musteriler.Add(data);
             return 1;
         }
-
         
-        private void LstMusteriler_DoubleClick(object sender, EventArgs e)
-        {
-            MessageBox.Show(LstMusteriler.SelectedItem.ToString());
-                
-        }
     }
 }

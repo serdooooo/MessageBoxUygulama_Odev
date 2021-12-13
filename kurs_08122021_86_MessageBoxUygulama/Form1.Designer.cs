@@ -168,7 +168,6 @@ namespace kurs_08122021_86_MessageBoxUygulama
             this.LstMusteriler.Name = "LstMusteriler";
             this.LstMusteriler.Size = new System.Drawing.Size(208, 148);
             this.LstMusteriler.TabIndex = 0;
-            this.LstMusteriler.DoubleClick += new System.EventHandler(this.LstMusteriler_DoubleClick);
             // 
             // BildirimCubugu
             // 
